@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script> function applyScripture(){
+        var name = document.getElementById("nameInput").value;
+        // var scripture = "I," + "Selam" + ",have been born of " + "goodly parents, therefore iwas taught somewhat" + " in all the learning of my father.";
+        document.getElementById("outputDiv").innerHTML ="If it were not so," + "would I," + name + ",have told you that " + "I go to prepare a place for you?";
+    }    
+    </script>
+</head>
+
+<body>
+    Please enter your name: <input type="text" id="nameInput">
+    <button type="button" onclick="applyScripture()">verse</button>
+    <div id="outputDiv"></div>
+
+</body>
+
+</html>

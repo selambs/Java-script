@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adress</title>
+    <script> function showAdress(){
+        var fullName = document.getElementById("fullName").value;
+        var Street = document.getElementById("Street").value;
+        var City = document.getElementById("City").value;
+        var State = document.getElementById("State").value;
+        var ZipCode = document.getElementById("ZipCode").value;
+        var outputDiv = fullName + Street + City + State + ZipCode;
+        document.getElementById("outputDiv").innerHTML= fullName +"<br>"+Street +"<br>"+ City + ","+State +" "+ ZipCode;
+    }
+    </script>
+</head>
+
+<body>
+    Full Name: 
+    <input type="text" id="fullName"><br/>
+    Street:
+     <input type="text" id="Street"><br>
+    City: 
+    <input type="text" id="City"><br>
+    State:
+     <input type="text" id="State"><br>
+    Zip Code: 
+    <input type="tel" id="ZipCode"><br>
+    <textarea></textarea>
+    <button type="button" onclick="showAdress()">Make Adress</button>
+    <div id="outputDiv"></div>
+
+</body>
+
+</html>
